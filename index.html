@@ -1,9 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="manifest"
+href="manifest.json">
 <title>Car Racing Game</title>
 
 <style>
+if("serviceworker" in navigater) {
+navigator.serviceworker.register("service-worker.js");
+    }
+</script>
 body{
     margin:0;
     overflow:hidden;
